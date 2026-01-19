@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AI Musical System – Eduardo Romaguera: interacción sonora entre humano y máquina, generando armonía emocional en tiempo real.">
-  <title>AI Musical System – Eduardo Romaguera</title>
-
+  <title>AI Musical System · Eduardo Romaguera</title>
+  <meta name="description" content="Obra generativa de Eduardo Romaguera: un sistema sonoro interactivo que explora la comunicación emocional entre humanos y máquinas mediante inteligencia artificial y síntesis MIDI.">
+  <meta name="author" content="Eduardo Romaguera">
+  <meta property="og:title" content="AI Musical System · Eduardo Romaguera">
+  <meta property="og:description" content="Pieza generativa interactiva de arte sonoro contemporáneo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://durome.github.io/IA-Musical-Interactiva/preview.jpg">
+  <meta property="og:url" content="https://durome.github.io/IA-Musical-Interactiva/">
   <style>
-    html, body { margin: 0; padding: 0; background: black; color: white; overflow: hidden; }
-    canvas { display: block; }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(-45deg, #000000, #090920, #1a1a40, #000000);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    canvas {
+      display: block;
+      margin: auto;
+      height: 100vh;
+      width: 100vw;
+    }
+    footer {
+      position: fixed;
+      bottom: 12px;
+      right: 20px;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      opacity: 0.6;
+    }
+    .title {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+      font-size: 22px;
+      font-weight: 300;
+    }
   </style>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js"></script>
 </head>
-
 <body>
+  <div class="title">AI MUSICAL SYSTEM · EDUARDO ROMAGUERA</div>
+  <footer>© Eduardo Romaguera · “AI Musical System” · 2026</footer>
+
   <script src="sketch.js"></script>
 </body>
 </html>
